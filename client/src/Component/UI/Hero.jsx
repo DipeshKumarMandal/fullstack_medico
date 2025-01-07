@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const navigate = useNavigate();
-  const loginAuth=useAuth()
+  const loginAuth = useAuth();
   return (
     <>
       <section className="pt-0 px-8" id="about">
@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
             {/*=================Hero Left Content */}
 
-            <div className="w-full md:basis-1/2 ">
+            <div className="w-full md:basis-1/2  ">
               <h5
                 data-aos="fade-right"
                 data-aos-duration="1500"
@@ -35,11 +35,12 @@ const Hero = () => {
                 data-aos-delay="200"
                 className="flex items-center gap-6 mt-7"
               >
-                {loginAuth.Login ? "":( <button className="bg-primaryColor text-white font-[580] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"      onClick={() => navigate("/login")}>
-                <i className="ri-mail-line"></i>
+                {!loginAuth.Login ? "":( <button className="bg-primaryColor text-white font-[580] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"      onClick={() => navigate("/login")}>
+                
                 Login
                 </button>)}
-                
+
+              
               </div>
 
               <p
@@ -74,7 +75,7 @@ const Hero = () => {
                 </span>
                 <span>
                   <a
-                    href="https://github.com/dipesh98243"
+                    href="https://github.com/DipeshKumarMandal/fullstack_medico"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-smallTextColor text-3xl font-[600]"
@@ -100,7 +101,7 @@ const Hero = () => {
             {/*=================Hero Img End=========================== */}
 
             {/*=================Hero conntent Right Start=========================== */}
-            <div className="md:basis-1/5 flex  justify-between text-center mt-10 flex-wrap gap-3 md:mt-0  md:flex-col md:justify-end md:text-end">
+            <div className="w-full md:basis-1/5 flex  justify-end text-center mt-10 flex-wrap gap-3 md:mt-0  md:flex-col md:justify-end md:text-end ">
               <div className="mb-10">
                 <h2 className="text-headingColor font-[700] text-[32px]">
                   <CountUp start={0} end={1} duration={2} suffix="+" />

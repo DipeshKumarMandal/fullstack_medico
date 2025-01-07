@@ -56,9 +56,9 @@ const Service = () => {
                       className=" rounded-lg bg-primaryColor border-white border-4 w-10 h-20 absolute left-1/2 transform -translate-x-1/2  -translate-y-4
                      sm:translate-y-0 flex items-center justify-center"
                     >
-                      // eslint-disable-next-line react/jsx-no-comment-textnodes
+                      
                       <figure>
-                       // <img src={frontendImg} alt="frontendImg" />
+                        <img src={frontendImg} alt="frontendImg" />
                       </figure>
                     </div>
                   </div>

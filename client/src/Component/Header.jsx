@@ -25,7 +25,7 @@ const Header = () => {
     <div className=" static flex items-center justify-between w-full  sm:px-8 px-4 py-2 border-b border-b-[#e6ebf4] bg-slate-200">
       <NavLink to="/">
         <div className=" font-semibold text-xl hover:cursor-pointer">
-          Medico
+          <img src="../../public/logo.jpeg" height="50" width="70"/>
         </div>
       </NavLink>
 

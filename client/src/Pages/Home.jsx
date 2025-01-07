@@ -33,8 +33,10 @@ import Service from "../Component/UI/Services";
 const Home = () => {
   return (
     <>
+    <div>
     <Hero />
     <Service/>
+    </div>
     
     </>
   )
